@@ -1,2 +1,2 @@
 #!/bin/bash
-makeSwift "$@"
+swiftc main.swift -o main
