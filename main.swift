@@ -1,22 +1,29 @@
-var wordsList : [String] = []
-while let input = readLine() {
-    wordsList.append(input)
-}
-
-func insertionSort(arr: inout [String]) -> [String] {
-    if arr.count == 1 {
-        return arr
+func insertionSort(words: inout [String]) {
+    if words.count <= 1 {
+        return 
     }
     
-    for i in 0 ..< arr.count {
-        let value = arr[i]
+    for i in 0 ..< words.count {
+        let value = words[i]
         var j = i - 1 
-        while j >= 0 && value < arr[j] { 
-            arr[j + 1] = arr[j]
+        while j >= 0 && value < words[j] { 
+            words[j + 1] = words[j]
             j -= 1
         }
-        arr[j + 1] = value                
+        words[j + 1] = value                
     }
-    return arr
+    return
 }
-let sortedWords = insertionSort(arr: &wordsList)
+
+func main() {
+    var wordsList : [String] = []
+    while let input = readLine() {
+        wordsList.append(input)
+    }
+    insertionSort(words: &wordsList)
+    for word in wordsList {
+        print(word)
+    }
+}
+
+main()

@@ -4,41 +4,9 @@
   "printedName": "TopLevel",
   "children": [
     {
-      "kind": "Var",
-      "name": "unsortedIntegers",
-      "printedName": "unsortedIntegers",
-      "children": [
-        {
-          "kind": "TypeNominal",
-          "name": "Array",
-          "printedName": "[Swift.Int]",
-          "children": [
-            {
-              "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
-            }
-          ],
-          "usr": "s:Sa"
-        }
-      ],
-      "declKind": "Var",
-      "usr": "s:6Simple16unsortedIntegersSaySiGvp",
-      "mangledName": "$s6Simple16unsortedIntegersSaySiGvp",
-      "moduleName": "Simple",
-      "declAttributes": [
-        "HasInitialValue",
-        "HasStorage",
-        "RawDocComment"
-      ],
-      "isLet": true,
-      "hasStorage": true
-    },
-    {
       "kind": "Function",
       "name": "insertionSort",
-      "printedName": "insertionSort(unsortedIntegers:)",
+      "printedName": "insertionSort(words:)",
       "children": [
         {
           "kind": "TypeNominal",
@@ -48,25 +16,40 @@
         {
           "kind": "TypeNominal",
           "name": "Array",
-          "printedName": "[Swift.Int]",
+          "printedName": "[Swift.String]",
           "children": [
             {
               "kind": "TypeNominal",
-              "name": "Int",
-              "printedName": "Swift.Int",
-              "usr": "s:Si"
+              "name": "String",
+              "printedName": "Swift.String",
+              "usr": "s:SS"
             }
           ],
+          "paramValueOwnership": "InOut",
           "usr": "s:Sa"
         }
       ],
       "declKind": "Func",
-      "usr": "s:6Simple13insertionSort16unsortedIntegersySaySiG_tF",
-      "mangledName": "$s6Simple13insertionSort16unsortedIntegersySaySiG_tF",
+      "usr": "s:6Simple13insertionSort5wordsySaySSGz_tF",
+      "mangledName": "$s6Simple13insertionSort5wordsySaySSGz_tF",
       "moduleName": "Simple",
-      "declAttributes": [
-        "RawDocComment"
+      "funcSelfKind": "NonMutating"
+    },
+    {
+      "kind": "Function",
+      "name": "main",
+      "printedName": "main()",
+      "children": [
+        {
+          "kind": "TypeNominal",
+          "name": "Void",
+          "printedName": "()"
+        }
       ],
+      "declKind": "Func",
+      "usr": "s:6Simple4mainyyF",
+      "mangledName": "$s6Simple4mainyyF",
+      "moduleName": "Simple",
       "funcSelfKind": "NonMutating"
     }
   ],
